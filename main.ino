@@ -10,6 +10,8 @@
 #define OUT_3 2
 #define OUT_4 3
 
+#define MIN_LIGHT 80
+
 void setup()
 {
   pinMode(IN_1, INPUT);
@@ -25,5 +27,8 @@ void setup()
 
 void loop()
 {
-  
+  digitalWrite(OUT_1, analogRead(IN_1) <= MIN_LIGHT ? HIGH : LOW);
+  digitalWrite(OUT_2, analogRead(IN_2) <= MIN_LIGHT ? HIGH : LOW);
+  digitalWrite(OUT_3, analogRead(IN_3) <= MIN_LIGHT ? HIGH : LOW);
+  digitalWrite(OUT_4, analogRead(IN_4) <= MIN_LIGHT ? HIGH : LOW);
 }
