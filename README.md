@@ -1,0 +1,3 @@
+## :bulb: Sobre o projeto
+
+Criado com o objetivo de passar o tempo e se divertir aprendendo mais sobre Arduino! Teoricamente isso é um bot para o jogo Piano Tiles 2...
